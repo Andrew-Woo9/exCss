@@ -1,0 +1,86 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.clearfix::after {
+  content: " ";
+  display: block;
+  height: 0px;
+  clear: both;
+}
+#warp {
+
+}
+
+#index-news {
+  width: 960px;
+  margin: 0 auto;
+
+  ul.news-list {
+
+    li.news-item {
+      float: left;
+      width: 300px;
+      height: 300px;
+      border: 1px solid green;
+      box-sizing: border-box;
+      margin-bottom: 30px;
+
+      &:nth-child(3n-1) {  /* css 특수기능 after 같은 */
+        background-color: #336699;
+        margin: auto 30px;
+      }
+    }
+  }
+}
+
+#game-info {
+  width: 960px;
+  margin: 0 auto;
+
+  ul.game-list {
+
+    li.game-item {
+      float: left;
+      width: 465px;
+      height: 250px;
+      border: 1px solid tomato;
+      box-sizing: border-box;
+      margin: 50px auto;
+    }
+
+    li.rightm {
+      margin-right: 30px;
+    }
+  }
+}
+
+#champ-info {
+ width: 960px;
+ margin: 0 auto;
+
+ ul.champ-list {
+
+   li.champ-item {
+     float: left;
+     width: (960px / 11);
+     height: (960px / 11);
+     background-color: #336699;
+     box-sizing: border-box;
+     margin-right: ((960px / 11) / 9);
+
+     &:nth-last-child(1) {
+       margin-right: 0px;
+     }
+   }
+
+   li.leftm {
+     margin-right: 0px;
+   }
+ }
+}

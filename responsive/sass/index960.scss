@@ -1,0 +1,62 @@
+@media screen and (max-width: 959px) {
+  #index-news {
+     width: 100%;
+
+     ul.news-list {
+
+       li.news-item {
+         width: 50%;
+
+         &:nth-child(3n-1) {
+           margin: 0;
+           margin-bottom: 30px;
+         }
+       }
+     }
+   }
+
+   #game-info {
+     width: 100%;
+     margin: 0 auto;
+
+     ul.game-list {
+
+       li.game-item {
+          width: 50%;
+
+       }
+
+       li.rightm {
+         margin-right: 0px;
+       }
+     }
+   }
+
+   #champ-info {
+    width: 100%;
+
+    ul.champ-list {
+      margin: 0 auto;
+      border: 1px solid #ff6699;
+
+      li.champ-item {
+        $rem-width: 100% /6;
+        float: left;
+        width: $rem-width ;
+        // height: $rem-width ;
+        background-color: #ff6699;
+        box-sizing: border-box;
+        margin-right: (100% / 5) / 5;
+
+        &:nth-child(5n + 0) {
+          margin-right: 0px;
+          background-color: red;
+        }
+      }
+
+      li.leftm {
+        margin-right: 0px;
+      }
+    }
+   }
+}

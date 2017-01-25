@@ -1,0 +1,426 @@
+@import "_var.scss";
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+body {
+  margin: 0;
+
+  div {
+    display: block;
+  }
+  a {
+    height: 100%;
+    display: block;
+    color: #585858;
+    text-decoration: none;
+
+    &:hover {
+      color: #58b5d3;
+      text-decoration: none;
+    }
+  }
+  img {
+    border: 0px;
+  }
+  ol, ul {
+    list-style: none;
+    padding: 0px;
+    margin:  0px;
+  }
+}
+.header {
+  position: relative;
+  height: 61px;
+  line-height: 61px;
+  min-height: 61px;
+  border-bottom: 1px solid #e7e7e7;
+  background-color: #fff;
+  padding: 0px 10px 0px 15px;
+
+  ul, li {
+    float: left;
+  }
+  .header-logo {
+    width: 90px;
+    padding: 7px 0px 0px 5px;
+    float: left;
+  }
+  .header-logosub ul li {
+    width: 80px;
+    padding-top: 2px;
+    float: left;
+  }
+  .header-right {
+    display: block;
+    float: right;
+
+    ul {
+      font-size: 14px;
+      padding: 0px 55px;
+
+      li {
+        padding: 0px 15px;
+      }
+    }
+  }
+}
+.header-login {
+  display: block;
+  float: right;
+  font-size: 12px;
+
+  ul {
+
+    li {
+      padding: 0px 15px;
+    }
+  }
+}
+.main-search {
+  position: relative;
+  height: 678px;
+  background-color: #dbecf6;
+  background-image: url(../images/MainSearch-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  .main-search-img1 {
+    height: 100%;
+    background-image: url(../images/MainSearch-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .main-search-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+    background-color: rgba(0,0,0,.6);
+
+    .main-searchfrom {
+      width: 534px;
+      height: 50px;
+      box-sizing: border-box;
+      margin: auto;
+      margin-top: 30px;
+
+      input {
+        float: left;
+        width: 434px;
+        height: 50px;
+        font-size: 14px;
+        line-height: 50px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        box-sizing: border-box;
+        border-style: none;
+        padding-left: 15px;
+      }
+
+      button {
+        float: left;
+        height: 50px;
+        width: 100px;
+        border: 0px;
+        font-size: 15px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: pointer;
+        color: white;
+        background-color: #3b8de0;
+
+        &:hover {
+          background-color: #2074c8;
+        }
+      }
+    }
+  }
+}
+.theme-search {
+  width: 100%;
+
+  .theme-top {
+    width: 960px;
+    margin: 71px auto 40px;
+    text-align: center;
+
+    h2 {
+      font-size: 32px;
+      margin: 0 auto;
+    }
+    p {
+      font-size: 24px;
+      margin: 5px auto;
+    }
+  }
+
+  .theme-contents {
+    width: 960px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    position: relative;
+
+    .box {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      float: left;
+      text-align: center;
+      margin: 0px 8px;
+
+      .theme-box  {
+        margin: 0px 0px;
+        width: 300px;
+        height: 300px;
+
+        .box-warp {
+          width: 300px;
+          position: absolute;
+          margin: 90px auto;
+          color: white;
+
+          .box-title{
+            font-size: 24px;
+          }
+          .box-line {
+            width: 46px;
+            height: 1px;
+            background-color: #fff;
+            margin: 23px auto;
+          }
+          .box-content {
+            margin: 5px auto;
+            font-size: 15px;
+          }
+        }
+      }
+      .mask{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #2a2a2a;
+        transition: transform .3s ease-in-out;
+        opacity: .4;
+      }
+      .theme-box-pet {
+        background-image: url(../images/pet.jpg);
+      }
+      .theme-box-guarantee {
+        background-image: url(../images/guarantee.jpg);
+      }
+      .theme-box-pano {
+        background-image: url(../images/pano.jpg);
+      }
+      .theme-box-parking {
+        background-image: url(../images/parking.jpg);
+      }
+      .theme-box-direct {
+        background-image: url(../images/direct.jpg);
+      }
+      .theme-box-offictel {
+        background-image: url(../images/officetel.jpg);
+      }
+    }
+  }
+  .plus-bottom {
+    padding-bottom: 180px;
+  }
+}
+.milddle-banner {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+
+  .banner-bg {
+    margin: 0 auto;
+    width: 1000px;
+    height: 100px;
+    background-image: url(../images/web_home_1000x100.png);
+    background-repeat: no-repeat;
+  }
+}
+.site-map {
+  width: 960px;
+  margin: 48px auto 71px;
+
+  .map-list{
+    float: left;
+    width: 190px;
+
+    .map-list-title {
+      line-height: 1.9;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .map-list-link a {
+      line-height: 1.9;
+      font-size: 14px;
+      text-decoration: none;
+      color: #585858;
+
+      &:hover {
+        text-decoration: underline;
+        color: #3b8de0;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.quick-menu {
+  position: relative;
+  width: 100%;
+  border-top: 1px solid #d1d1d1;
+  border-bottom: 1px solid #d1d1d1;
+
+  .menu-info {
+    width: 960px;
+    height: 49px;
+    margin: 0 auto;
+
+    .quick-menu-list {
+      float: left;
+      display: block;
+      width: 136px;
+      height: 49px;
+      border-right: 1px solid #d1d1d1;
+      color: #585858;
+      font-size: 13px;
+      line-height: 49px;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover {
+        background-color: #e7e7e7;
+      }
+      a {
+        color: #585858;
+        text-decoration: none;
+
+      &.color-red {
+          color: red;
+        }
+      }
+    }
+    .left-border {
+      border-left: 1px solid #d1d1d1;
+    }
+  }
+}
+.footer {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: #2a2a2a;
+
+  .footer-info {
+    padding-top: 110px;
+    width: 960px;
+    height: 200px;
+    margin: 0 auto;
+    color: #919191;
+    font-size: 14px;
+
+    .footer-box {
+      width: 100px;
+      height: 100px;
+      display: block;
+      float: left;
+
+      .footer-logo {
+        width: 98px;
+        height: 88px;
+        background-image: url(../images/station3_CI.png);
+        background-repeat: no-repeat;
+        margin-top: 10px;
+
+      }
+    }
+    .footer-company-info01 {
+      display: block;
+      float: left;
+      width: 300px;
+      margin-left: 40px;
+
+
+      .footer-infor01-company {
+        font-size: 15px;
+        color: white;
+        margin-bottom: 10px;
+      }
+      .footer-infor01-ceo {
+        margin-bottom: 10px;
+
+      }
+      .footer-infor01-addr1 {
+
+      }
+      .footer-infor01-addr2 {
+        margin-bottom: 10px;
+
+      }
+      .footer-infor01-tel {
+
+      }
+    }
+    .footer-company-info02 {
+      display: block;
+      float: left;
+      width: 300px;
+
+      .footer-infor02-detail01 {
+        margin-top: 46px;
+      }
+      .footer-infor02-detail02 {
+        margin-top: 10px;
+      }
+      .footer-infor02-detail03 {
+        margin-top: 10px;
+      }
+    }
+    .footer-link {
+      float: left;
+      width: 200px;
+
+      .footer-link-sns {
+        margin-top: 40px;
+        text-align: center;
+
+        .sns-fb {
+          height: 40px;
+          width: 40px;
+          float: left;
+          margin-left: 80px;
+          background-color: white;
+          line-height: 2.2;
+          border-radius: 25px;
+          font-size: 20px;
+
+          & a:hover {
+            color: #4267b2;
+          }
+        }
+        .sns-blog {
+          height: 40px;
+          width: 40px;
+          margin-left: 140px;
+          background-color: white;
+          line-height: 3;
+          border-radius: 25px;
+
+          & a:hover {
+            color: #23b300;
+          }
+        }
+      }
+      .footer-link-info {
+        margin-top: 20px;
+      }
+    }
+  }
+}
